@@ -1,9 +1,3 @@
-// ─────────────────────────────────────────────────────────────
-// components/sections/Navbar.jsx
-// Sticky header with desktop nav + mobile hamburger drawer.
-// Goes dark/blurred once the user scrolls past 40 px.
-// ─────────────────────────────────────────────────────────────
-
 import { useState, useEffect } from "react";
 import { NAV_LINKS } from "../../data";
 
@@ -26,13 +20,12 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-
         {/* Logo */}
         <a
           href="#home"
           className="text-2xl font-black tracking-widest text-violet-400 hover:text-violet-300 transition-colors"
         >
-          PAUL
+          ONSONGO
         </a>
 
         {/* Desktop nav */}

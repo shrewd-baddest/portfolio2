@@ -34,7 +34,7 @@ export default function SkillBar({ label, pct, index = 0 }) {
       <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
         <div
           ref={barRef}
-          className="h-full rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-400"
+          className="h-full rounded-full bg-linear-to-r from-violet-500 to-fuchsia-400"
           style={{ width: "0%" }}
         />
       </div>

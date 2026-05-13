@@ -20,9 +20,9 @@ export default function ProjectCard({
     Aircraft: air,
   };
   return (
-    <div className="flex flex-col sm:flex-row gap-4 items-start bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-violet-500/60 hover:bg-violet-900/20 transition-colors duration-300">
+    <div className="flex flex-col sm:flex-row gap-4  justify-between bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-violet-500/60 hover:bg-violet-900/20 transition-colors duration-300">
       {/* .portfolio-layer — GSAP slides this in from the left */}
-      <div ref={cardRef} className="flex-1">
+      <div ref={cardRef}>
         <a
           href={href || "#"}
           target={href && href !== "#" ? "_blank" : undefined}
@@ -48,7 +48,7 @@ export default function ProjectCard({
       </div>
       <div ref={imgRef}>
         <img
-          className="shrink-0 w-16 h-16 rounded-xl bg-linear-to-br from-violet-700 to-fuchsia-700 flex items-center justify-center text-2xl font-black text-white shadow-lg"
+          className=" w-30 h-fit rounded-lg bg-linear-to-br from-violet-700 to-fuchsia-700 flex items-center justify-center shadow-lg"
           src={icons[cardLabel] || SE}
           alt={cardLabel}
         />
